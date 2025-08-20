@@ -15,6 +15,9 @@ const Home = () => {
         const email = form.email.value;
         const user = {name,email}
         console.log(user);
+        fetch('http://localhost:5000/users',)
+        .then(res => res.json())
+        .then(data=>setUsers(data))
     }
     return (
         <div>
